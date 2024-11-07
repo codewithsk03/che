@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Biodiversity Overview</title>
+</head>
+
+<body>
+    <video class="background-video" autoplay muted loop>
+        <source src="biodiversity.mp4" type="video/mp4" accesskey="">
+        Your browser does not support the video tag.
+    </video>
+    <header>
+        <h1>Biodiversity: The Variety of Life</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="species.html">Species</a></li>
+                <li><a href="important.html">Important</a></li>
+                <li><a href="conservation.html">Conservation</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="introduction">
+        <h2>Biodiversity: An Overview</h2>
+        <p>Biodiversity refers to the variety of life forms on Earth, including species, genes, and ecosystems. It
+            provides essential services like food, clean water, medicine, and climate regulation.
+            <br>
+            Biodiversity, short for "biological diversity," refers to the variety and variability of life on Earth. It
+            includes the diversity within species (genetic diversity), between species (species diversity), and among
+            ecosystems (ecosystem diversity). Biodiversity encompasses all living organisms, their roles within
+            ecosystems, and the complex interactions among them
+        </p>
+    </section>
+
+    <section id="components">
+        <h2>Components of Biodiversity</h2>
+        <p><strong>Genetic Diversity:</strong> Variation within species allows adaptation to changing environments.</p>
+        <p><strong>Species Diversity:</strong> The variety of species in ecosystems, contributing to ecological balance.
+        </p>
+        <p><strong>Ecosystem Diversity:</strong> Different habitats, such as forests and oceans, that support a range of
+            species.</p>
+    </section>
+
+    <section id="importance">
+        <h2>Importance of Biodiversity</h2>
+        <p><strong>Ecosystem Services:</strong> Biodiversity supports food, water, air purification, and climate
+            regulation.</p>
+        <p><strong>Food Security:</strong> Genetic diversity in crops and livestock ensures food resilience.</p>
+    </section>
+
+    <section id="threats">
+        <h2>Threats to Biodiversity</h2>
+        <p><strong>Habitat Destruction:</strong> Deforestation and urbanization lead to habitat loss.</p>
+        <p><strong>Pollution:</strong> Air, water, and soil pollution harm ecosystems.</p>
+    </section>
+
+    <section id="conservation">
+        <h2>Conservation Efforts</h2>
+        <ul>
+            <li><strong>Protected Areas:</strong> National parks and reserves help preserve habitats.</li>
+            <li><strong>Sustainable Practices:</strong> Sustainable agriculture and fishing reduce environmental impact.
+            </li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Biodiversity Awareness</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const button = document.createElement('button');
+            button.textContent = 'Show Fun Fact';
+            document.body.appendChild(button);
+
+            const funFacts = [
+                'Did you know? There are over 8.7 million species on Earth!',
+                'Coral reefs support 25% of all marine species.',
+                'The Amazon hosts 10% of Earth’s species.'
+            ];
+
+            button.addEventListener('click', () => {
+                alert(funFacts[Math.floor(Math.random() * funFacts.length)]);
+            });
+        });
+    </script>
+</body>
+
+</html>
